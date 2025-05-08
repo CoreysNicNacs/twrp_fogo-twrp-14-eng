@@ -1,0 +1,19 @@
+# recovery.fstab for Motorola fogo
+# Format: <block device>  <mount point>  <fs type>  <mount options>
+
+/dev/block/by-name/super        /super      ext4    ro,noatime,errors=panic
+/dev/block/by-name/userdata     /data       ext4    rw,noatime,errors=panic
+/dev/block/by-name/boot_a       /boot       emmc    defaults
+/dev/block/by-name/boot_b       /boot       emmc    defaults
+/dev/block/by-name/cache        /cache      ext4    rw,noatime,errors=panic
+/dev/block/by-name/metadata     /metadata   ext4    rw,noatime,errors=panic
+/dev/block/by-name/modem_a      /modem      ext4    ro,noatime,errors=panic
+/dev/block/by-name/modem_b      /modem      ext4    ro,noatime,errors=panic
+/dev/block/by-name/dsp_a        /dsp        ext4    ro,noatime,errors=panic
+/dev/block/by-name/dsp_b        /dsp        ext4    ro,noatime,errors=panic
+/dev/block/by-name/vbmeta_a     /vbmeta     emmc    defaults
+/dev/block/by-name/vbmeta_b     /vbmeta     emmc    defaults
+/dev/block/by-name/vendor_boot_a /vendor_boot emmc defaults
+/dev/block/by-name/vendor_boot_b /vendor_boot emmc defaults
+/dev/block/by-name/frp          /frp        emmc    defaults
+/dev/block/by-name/logfs        /logfs      vfat    defaults
